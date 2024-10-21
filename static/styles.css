@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.container {
+    flex: 1; /* Allow the container to grow */
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between borders */
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6; /* Add borders */
+    padding: 12px; /* Add some padding */
+    text-align: left; /* Align text to the left */
+}
+
+.table th {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping */
+}
+
+.table tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+}
